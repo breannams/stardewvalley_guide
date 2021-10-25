@@ -1,3 +1,3 @@
 class Bundle < ApplicationRecord
-  belongs_to :stardewvalleys
+  belongs_to :stardewvalley
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :quests
   resources :minerals
   resources :shops
   resources :crops

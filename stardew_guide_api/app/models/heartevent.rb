@@ -1,3 +1,3 @@
 class Heartevent < ApplicationRecord
-  belongs_to :villagers
+  belongs_to :villager
 end
