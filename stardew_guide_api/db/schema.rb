@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_25_041711) do
+ActiveRecord::Schema.define(version: 2021_10_25_220503) do
 
   create_table "animals", force: :cascade do |t|
     t.integer "stardewvalley_id", null: false
@@ -73,6 +73,17 @@ ActiveRecord::Schema.define(version: 2021_10_25_041711) do
     t.index ["stardewvalley_id"], name: "index_minerals_on_stardewvalley_id"
   end
 
+  create_table "quests", force: :cascade do |t|
+    t.integer "stardewvalley_id", null: false
+    t.string "type"
+    t.string "name"
+    t.string "description"
+    t.string "start_by"
+    t.string "requirements"
+    t.string "rewards"
+    t.index ["stardewvalley_id"], name: "index_quests_on_stardewvalley_id"
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "ingredients"
@@ -125,6 +136,7 @@ ActiveRecord::Schema.define(version: 2021_10_25_041711) do
   add_foreign_key "fish", "stardewvalleys"
   add_foreign_key "heartevents", "villagers"
   add_foreign_key "minerals", "stardewvalleys"
+  add_foreign_key "quests", "stardewvalleys"
   add_foreign_key "recipes", "stardewvalleys"
   add_foreign_key "shops", "stardewvalleys"
   add_foreign_key "trees", "stardewvalleys"
