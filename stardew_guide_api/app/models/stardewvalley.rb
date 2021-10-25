@@ -1,0 +1,2 @@
+class Stardewvalley < ApplicationRecord
+end
