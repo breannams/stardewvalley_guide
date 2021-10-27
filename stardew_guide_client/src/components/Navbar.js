@@ -15,11 +15,18 @@ const link = {
     return(
       <div className = "gameNav">
        
-        <NavLink to= "/animals" exact style = {link}>Animals</NavLink>
-        <NavLink to = "/buildings" exact style = {link}>Buildings</NavLink>
-        <NavLink to = "/festivals" exact style = {link}>Festivals</NavLink>
-        <NavLink to = "quests" exact style = {link}>Quests</NavLink>
-        <NavLink to = "villagers" exact style = {link}>Villagers</NavLink>
+        <NavLink to= "/animals" style = {link}>Animals</NavLink>
+        <NavLink to = "/buildings" style = {link}>Buildings</NavLink>
+        <NavLink to = "/bundles" style = {link}>Buidings</NavLink>
+        <NavLink to = "/crops" style = {link}>Crops</NavLink>
+        <NavLink to = "/festivals" style = {link}>Festivals</NavLink>
+        <NavLink to = "/fish" style = {link}>Fish</NavLink>
+        <NavLink to = "/minerals" style = {link}>Minerals</NavLink>
+        <NavLink to = "/quests" style = {link}>Quests</NavLink>
+        <NavLink to = "/recipes" style = {link}>Recipes</NavLink>
+        <NavLink to = "/shops" style = {link}>Shops</NavLink>
+        <NavLink to = "/trees" style = {link}>Trees </NavLink>
+        <NavLink to = "/villagers" exact style = {link}>Villagers</NavLink>
 
       </div>
     )
