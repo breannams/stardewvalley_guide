@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :festivals
+  resources :buildings
   resources :quests
   resources :minerals
   resources :shops
