@@ -26,3 +26,4 @@ export const rootReducer = combineReducers({
     trees: treesReducer,
     villagers: villagersReducer
 })
+export default rootReducer

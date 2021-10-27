@@ -4,7 +4,7 @@ import {createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
-import rootReducer from './reducers/rootReducer'
+import rootReducer from './Shop/reducers/rootReducer'
 import App from './App';
 import {Router } from 'react-router-dom';
 import history from './helpers/History';
