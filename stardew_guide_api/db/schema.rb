@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_25_220503) do
+ActiveRecord::Schema.define(version: 2021_11_10_214235) do
 
   create_table "animals", force: :cascade do |t|
     t.integer "stardewvalley_id", null: false
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 2021_10_25_220503) do
     t.string "selling_price"
     t.string "requirements"
     t.index ["stardewvalley_id"], name: "index_animals_on_stardewvalley_id"
+  end
+
+  create_table "buildings", force: :cascade do |t|
+    t.integer "stardewvalley_id", null: false
+    t.string "name"
+    t.integer "cost"
+    t.string "use"
+    t.index ["stardewvalley_id"], name: "index_buildings_on_stardewvalley_id"
   end
 
   create_table "bundles", force: :cascade do |t|
@@ -44,6 +52,16 @@ ActiveRecord::Schema.define(version: 2021_10_25_220503) do
     t.index ["stardewvalley_id"], name: "index_crops_on_stardewvalley_id"
   end
 
+  create_table "festivals", force: :cascade do |t|
+    t.integer "stardewvalley_id", null: false
+    t.string "name"
+    t.string "date"
+    t.string "time_location"
+    t.string "description"
+    t.string "purchases"
+    t.index ["stardewvalley_id"], name: "index_festivals_on_stardewvalley_id"
+  end
+
   create_table "fish", force: :cascade do |t|
     t.integer "stardewvalley_id", null: false
     t.string "name"
@@ -60,6 +78,7 @@ ActiveRecord::Schema.define(version: 2021_10_25_220503) do
     t.integer "villager_id", null: false
     t.integer "heart_number"
     t.string "description"
+    t.boolean "completed"
     t.index ["villager_id"], name: "index_heartevents_on_villager_id"
   end
 
@@ -131,8 +150,10 @@ ActiveRecord::Schema.define(version: 2021_10_25_220503) do
   end
 
   add_foreign_key "animals", "stardewvalleys"
+  add_foreign_key "buildings", "stardewvalleys"
   add_foreign_key "bundles", "stardewvalleys"
   add_foreign_key "crops", "stardewvalleys"
+  add_foreign_key "festivals", "stardewvalleys"
   add_foreign_key "fish", "stardewvalleys"
   add_foreign_key "heartevents", "villagers"
   add_foreign_key "minerals", "stardewvalleys"
