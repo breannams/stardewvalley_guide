@@ -4,9 +4,9 @@ import {createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
-import rootReducer from './Shop/reducers/rootReducer'
+import rootReducer from './Store/reducers/rootReducer'
 import App from './App';
-import {Router } from 'react-router-dom';
+import { Router} from 'react-router-dom';
 import history from './helpers/History';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
@@ -16,7 +16,6 @@ ReactDOM.render(
     <Router history = {history} >
       <App />
     </Router>
-  </Provider>
-  ,
+  </Provider>,
   document.getElementById('root')
 );

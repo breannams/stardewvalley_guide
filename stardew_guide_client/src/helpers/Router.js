@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 
 import HomePage from "../components/pages/HomePage";
@@ -15,10 +15,8 @@ import ShopsContainer from '../containers/ShopsContainer'
 import TreesContainer from '../containers/TreesContainer'
 import VillagersContainer from '../containers/VillagersContainer'
 
-export class Router extends Component {
-    render(){
- 
- 
+const Router = () => {
+    
     return(
         <Switch>
             <Route exact path = "/" component = {HomePage} />
@@ -34,7 +32,8 @@ export class Router extends Component {
             <Route path = '/shops' component = {ShopsContainer} />
             <Route path = '/trees' component = {TreesContainer} />
             <Route path = '/villagers' component = {VillagersContainer} />
+          
         </Switch>
     )
-}}
+}
 export default Router
