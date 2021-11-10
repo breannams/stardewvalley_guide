@@ -14,6 +14,7 @@ import RecipesContainer from '../containers/RecipesContainer'
 import ShopsContainer from '../containers/ShopsContainer'
 import TreesContainer from '../containers/TreesContainer'
 import VillagersContainer from '../containers/VillagersContainer'
+import FormsContainer from '../containers/FormsContainer';
 
 const Router = () => {
     
@@ -32,7 +33,7 @@ const Router = () => {
             <Route path = '/shops' component = {ShopsContainer} />
             <Route path = '/trees' component = {TreesContainer} />
             <Route path = '/villagers' component = {VillagersContainer} />
-          
+            <Route path = '/forms' component = {FormsContainer} />
         </Switch>
     )
 }
