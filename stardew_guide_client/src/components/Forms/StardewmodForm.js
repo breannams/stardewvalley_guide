@@ -1,9 +1,9 @@
 import { Component } from "react";
 import {connect} from 'react-redux'
-
+////make this form look like a box.
 class Form extends Component {
     state = {
-
+        name: ""
     }
     handleChange = (event) => {
         this.setState({
@@ -18,9 +18,12 @@ class Form extends Component {
     render(){
         return(
             <>
+            list out stardewvalley and mods here w/ bullet points
+            or add a new stardew mod:
             <form onSubmit = {this.handleSubmit}>
-                
-                <input type = "submit" value = "Create" />
+                <label>Stardewvalley Name: </label>
+                <input type = "text" onChange = {this.handleChange} />
+                <input type = "submit" value = "Add" />
             </form>
             </>
         )

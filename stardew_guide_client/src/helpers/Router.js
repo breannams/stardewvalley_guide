@@ -36,7 +36,7 @@ const Router = () => {
         <Switch>
             <Route exact path = "/" component = {HomePage} />
 
-            <Route path = '/stardewvalleys/new' component = {StardewmodForm}/>
+            {/* <Route path = '/stardewvalleys/new' component = {StardewmodForm}/> May just make this a consistant component for other forms?*/}
 
             <Route path = '/animals/new' component = {AnimalForm} />
             <Route path = '/animals' component = {AnimalsContainer} />
