@@ -29,7 +29,7 @@ class AnimalForm extends Component {
             <>
                 <h1>Add a new animal: </h1>
                 <h3>Choose which Stardewvalley this animal belongs to: </h3> 
-                <br></br>
+                
                 <StardewmodForm />
 
                 <form onSubmit = {this.handleSubmit}>
