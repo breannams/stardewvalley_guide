@@ -9,6 +9,7 @@ class CreateFish < ActiveRecord::Migration[6.1]
       t.string :weather
       t.string :difficulty
       t.string :used_in
+      t.integer :sell_price
 
     end
   end

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_11_10_214235) do
     t.string "name"
     t.integer "cost"
     t.string "produces"
-    t.string "selling_price"
+    t.integer "sell_price"
     t.string "requirements"
     t.index ["stardewvalley_id"], name: "index_animals_on_stardewvalley_id"
   end
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2021_11_10_214235) do
     t.string "weather"
     t.string "difficulty"
     t.string "used_in"
+    t.integer "sell_price"
     t.index ["stardewvalley_id"], name: "index_fish_on_stardewvalley_id"
   end
 
@@ -108,8 +109,7 @@ ActiveRecord::Schema.define(version: 2021_11_10_214235) do
     t.string "ingredients"
     t.string "restores"
     t.string "buffs"
-    t.string "recipe"
-    t.string "sources"
+    t.string "recipe_sources"
     t.string "loved_by"
     t.integer "stardewvalley_id", null: false
     t.index ["stardewvalley_id"], name: "index_recipes_on_stardewvalley_id"
@@ -126,7 +126,7 @@ ActiveRecord::Schema.define(version: 2021_11_10_214235) do
   end
 
   create_table "stardewvalleys", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
   end
 
   create_table "trees", force: :cascade do |t|
@@ -135,6 +135,7 @@ ActiveRecord::Schema.define(version: 2021_11_10_214235) do
     t.string "season"
     t.integer "price"
     t.string "produces"
+    t.integer "sell_price"
     t.integer "stardewvalley_id", null: false
     t.index ["stardewvalley_id"], name: "index_trees_on_stardewvalley_id"
   end

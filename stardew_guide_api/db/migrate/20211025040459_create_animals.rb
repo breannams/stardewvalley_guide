@@ -5,7 +5,7 @@ class CreateAnimals < ActiveRecord::Migration[6.1]
       t.string :name
       t.integer :cost
       t.string :produces
-      t.string :selling_price
+      t.integer :sell_price
       t.string :requirements
 
     end
