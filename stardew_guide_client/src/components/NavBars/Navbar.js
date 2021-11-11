@@ -17,7 +17,7 @@ const link = {
        
         <NavLink to= "/animals" style = {link}>Animals</NavLink>
         <NavLink to = "/buildings" style = {link}>Buildings</NavLink>
-        <NavLink to = "/bundles" style = {link}>Buidings</NavLink>
+        <NavLink to = "/bundles" style = {link}>Bundles</NavLink>
         <NavLink to = "/crops" style = {link}>Crops</NavLink>
         <NavLink to = "/festivals" style = {link}>Festivals</NavLink>
         <NavLink to = "/fish" style = {link}>Fish</NavLink>

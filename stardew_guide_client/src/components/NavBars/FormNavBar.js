@@ -17,7 +17,7 @@ const link = {
        <NavLink to = "/stardewvalleys/new" style = {link}>Stardewvalley Mod</NavLink>
         <NavLink to= "/animals/new" style = {link}>Animals</NavLink>
         <NavLink to = "/buildings/new" style = {link}>Buildings</NavLink>
-        <NavLink to = "/bundles/new" style = {link}>Buidings</NavLink>
+        <NavLink to = "/bundles/new" style = {link}>Bundles</NavLink>
         <NavLink to = "/crops/new" style = {link}>Crops</NavLink>
         <NavLink to = "/festivals/new" style = {link}>Festivals</NavLink>
         <NavLink to = "/fish/new" style = {link}>Fish</NavLink>
