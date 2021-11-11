@@ -19,8 +19,6 @@ class Form extends Component {
         return(
             <>
             <form onSubmit = {this.handleSubmit}>
-                <label>Image:</label>
-                <input type = "file" />
                 <input type = "submit" value = "Create" />
             </form>
             </>
