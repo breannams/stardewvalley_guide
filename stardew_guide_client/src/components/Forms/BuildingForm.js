@@ -1,9 +1,14 @@
 import { Component } from "react";
 import {connect} from 'react-redux'
+import StardewmodForm from './StardewmodForm'
 
-class Form extends Component {
+class BuildingForm extends Component {
     state = {
-
+        image: null,
+        name: "",
+        cost: "",
+        use: "",
+        stardewvalley_id: null
     }
     handleChange = (event) => {
         this.setState({
@@ -18,14 +23,35 @@ class Form extends Component {
     render(){
         return(
             <>
-            <form onSubmit = {this.handleSubmit}>
-                <label>Image:</label>
-                <input type = "file" />
-                <input type = "submit" value = "Create" />
-            </form>
+                <h1>Add a new building:</h1>
+                <h3>Choose which Stardewvalley this animal belongs to: </h3> 
+                <StardewmodForm />
+
+                <form onSubmit = {this.handleSubmit}>
+                    <h3>
+                        <label>Building Image:</label>
+                        <input type = "file" />
+                        <input type = "submit" value = "Create" />
+                        <br></br>
+
+                        <label>Building Name: </label>
+                        <input type = "text" name = "name" onChange = {this.handleChange} />
+                        <br></br>
+
+                        <label>Cost: </label>
+                        <input type = "number" name = "cost" onChange = {this.handleChange} />
+                        <br></br>
+
+                        <label>Use:</label>
+                        <input type = "text" name = "use" onChange = {this.handleChange} />
+                        <br></br>
+
+                        <input type = "submit" value = "Create" />
+                    </h3>
+                </form>
             </>
         )
     }
 }
 
-export default connect(null, {}) (Form)
+export default connect(null, {}) (BuildingForm)
