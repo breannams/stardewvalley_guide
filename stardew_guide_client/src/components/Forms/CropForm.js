@@ -26,7 +26,7 @@ class CropForm extends Component {
     render(){
         return(
             <>
-             <h1>Add a new bundle:</h1>
+             <h1>Add a new crop:</h1>
                 <h3>Choose which Stardewvalley this crop belongs to: </h3> 
                 <StardewmodForm />
 
