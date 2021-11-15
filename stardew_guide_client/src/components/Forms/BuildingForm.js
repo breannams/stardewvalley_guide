@@ -6,7 +6,7 @@ class BuildingForm extends Component {
     state = {
         image: null,
         name: "",
-        cost: "",
+        cost: 0,
         use: "",
         stardewvalley_id: null
     }
