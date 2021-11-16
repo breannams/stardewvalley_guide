@@ -3,7 +3,13 @@ import {connect} from 'react-redux'
 
 class QuestForm extends Component {
     state = {
-
+        stardewvalley_id: null,
+        type: "",
+        name: "",
+        description: "",
+        start_by: "",
+        requirements: "",
+        rewards: ""
     }
     handleChange = (event) => {
         this.setState({
