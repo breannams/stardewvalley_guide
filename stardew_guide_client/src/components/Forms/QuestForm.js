@@ -1,7 +1,7 @@
 import { Component } from "react";
 import {connect} from 'react-redux'
 
-class Form extends Component {
+class QuestForm extends Component {
     state = {
 
     }
@@ -18,9 +18,35 @@ class Form extends Component {
     render(){
         return(
             <>
+                <h1>Add a new quest: </h1>
+                <h3>Choose which Stardewvalley this quest belongs to: </h3> 
+                
+                <StardewmodForm />
             <form onSubmit = {this.handleSubmit}>
-                <label>Image:</label>
-                <input type = "file" />
+                <label>Type:</label>
+                <input type = "text" name = "type" onChange = {this.handleChange} />
+                <br></br>
+
+                <label>Name: </label>
+                <input type = "text" name = "name" onChange = {this.handleChange} />
+                <br></br>
+
+                <label>Description: </label>
+                <input type = "text" name = "description" onChange = {this.handleChange} />
+                <br></br>
+
+                <label>Start by: </label>
+                <input type = "text" name = "start_by" placeholder = "Ex. Help wanted sign" onChange = {this.handleChange} />
+                <br></br>
+
+                <label>Requirements: </label>
+                <input type = "text" name = "requirements" onChange = {this.handleChange} />
+                <br></br>
+
+                <label>Rewards: </label>
+                <input type = "text" name = "rewards" onChange = {this.handleChange} />
+                <br></br>
+
                 <input type = "submit" value = "Create" />
             </form>
             </>
@@ -28,4 +54,4 @@ class Form extends Component {
     }
 }
 
-export default connect(null, {}) (Form)
+export default connect(null, {}) (QuestForm)
