@@ -28,7 +28,7 @@ class ShopForm extends Component {
                 <StardewmodForm />
 
                 <form onSubmit = {this.handleSubmit}>
-                    <label>Name:</label>
+                    <label>Shop Name:</label>
                     <input type = "text" name = "name" onChange = {this.handleChange}/>
                     <br></br>
 

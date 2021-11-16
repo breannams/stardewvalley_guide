@@ -34,7 +34,7 @@ class RecipeForm extends Component {
                 <input type = "file" />
                 <br></br>
 
-                <label>Name: </label>
+                <label>Recipe Name: </label>
                 <input type = "text" name = "name" onChange = {this.handleChange} />
                 <br></br>
 

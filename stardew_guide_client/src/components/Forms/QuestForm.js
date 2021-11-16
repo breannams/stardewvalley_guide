@@ -29,12 +29,13 @@ class QuestForm extends Component {
                 
                 <StardewmodForm />
             <form onSubmit = {this.handleSubmit}>
-                <label>Type:</label>
-                <input type = "text" name = "type" onChange = {this.handleChange} />
+
+                <label>Quest Name: </label>
+                <input type = "text" name = "name" onChange = {this.handleChange} />
                 <br></br>
 
-                <label>Name: </label>
-                <input type = "text" name = "name" onChange = {this.handleChange} />
+                <label>Type:</label>
+                <input type = "text" name = "type" onChange = {this.handleChange} />
                 <br></br>
 
                 <label>Description: </label>

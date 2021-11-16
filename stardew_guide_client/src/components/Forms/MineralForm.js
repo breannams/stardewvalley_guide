@@ -33,7 +33,7 @@ class MineralForm extends Component {
                 <input type = "file" name = "image"/>
                 <br></br>
 
-                <label>Name: </label>
+                <label>Mineral Name: </label>
                 <input type = "text" name = "name" onChange = {this.handleChange} />
                 <br></br>
 
