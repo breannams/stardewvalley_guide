@@ -1,5 +1,6 @@
 import { Component } from "react";
 import {connect} from 'react-redux'
+import StardewmodForm from './StardewmodForm'
 
 class MineralForm extends Component {
     state = {
