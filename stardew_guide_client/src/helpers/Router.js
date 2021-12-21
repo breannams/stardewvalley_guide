@@ -29,52 +29,57 @@ import RecipeForm from '../components/Forms/RecipeForm';
 import ShopForm from '../components/Forms/ShopForm'
 import TreeForm from '../components/Forms/TreeForm'
 import VillagerForm from '../components/Forms/VillagerForm'
+import HeartEventForm from '../components/Forms/HeartEventForm';
 
 const Router = () => {
     
     return(
-        <Switch>
+        <div>
             <Route exact path = "/" component = {HomePage} />
 
             {/* <Route path = '/stardewvalleys/new' component = {StardewmodForm}/> May just make this a consistant component for other forms?*/}
-
-            <Route path = '/animals/new' component = {AnimalForm} />
+            <Route path = '/forms' component = {FormsContainer} />
+            <Route path = '/forms/stardewvalleys/new' component = {StardewmodForm}/>
+            
+            <Route path = '/forms/animals/new' component = {AnimalForm} />
             <Route path = '/animals' component = {AnimalsContainer} />
         
-            <Route path = '/buildings/new' component = {BuildingForm} />
+            <Route path = '/forms/buildings/new' component = {BuildingForm} />
             <Route path = '/buildings' component = {BuildingsContainer} />
 
-            <Route path = '/bundles/new' component = {BundlesForm}/>
+            <Route path = '/forms/bundles/new' component = {BundlesForm}/>
             <Route path = '/bundles' component = {BundlesContainer} />
 
-            <Route path = '/crops/new' component = {CropForm} />
+            <Route path = '/forms/crops/new' component = {CropForm} />
             <Route path = '/crops' component = {CropsContainer} />
 
-            <Route path = "/festivals/new" component = {FestivalForm} />
+            <Route path = "/forms/festivals/new" component = {FestivalForm} />
             <Route path = "/festivals" component = {FestivalsContainer} />
 
-            <Route path = '/fish/new' component = {FishForm} />
+            <Route path = '/forms/fish/new' component = {FishForm} />
             <Route path = '/fish' component = {FishContainer} />
 
-            <Route path = '/minerals/new' component = {MineralForm} />
+            <Route path = '/forms/minerals/new' component = {MineralForm} />
             <Route path = '/minerals' component = {MineralsContainer} />
 
-            <Route path = "/quests/new" component = {QuestForm} />
+            <Route path = '/forms/heartevents/new' component = {HeartEventForm} />
+            
+            <Route path = "/forms/quests/new" component = {QuestForm} />
             <Route path = "/quests" component = {QuestsContainer} />
 
-            <Route path = '/recipes/new' component = {RecipeForm} />
+            <Route path = '/forms/recipes/new' component = {RecipeForm} />
             <Route path = '/recipes' component = {RecipesContainer} />
 
-            <Route path = '/shops/new' component = {ShopForm} />
+            <Route path = '/forms/shops/new' component = {ShopForm} />
             <Route path = '/shops' component = {ShopsContainer} />
 
-            <Route path = '/trees/new' component = {TreeForm} />
+            <Route path = '/forms/trees/new' component = {TreeForm} />
             <Route path = '/trees' component = {TreesContainer} />
 
-            <Route path = '/villagers/new' component = {VillagerForm} />
+            <Route path = '/forms/villagers/new' component = {VillagerForm} />
             <Route path = '/villagers' component = {VillagersContainer} />
-            <Route path = '/forms' component = {FormsContainer} />
-        </Switch>
+           
+        </div>
     )
 }
 export default Router
