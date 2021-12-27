@@ -46,6 +46,6 @@ class MineralsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def mineral_params
-      params.require(:mineral).permit(:stardewvalley_id, :name, :description, :sellprice, :location, :used_in)
+      params.require(:mineral).permit(:stardewvalley_id, :name, :description, :sellprice, :location, :used_in, :image)
     end
 end

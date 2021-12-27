@@ -46,6 +46,6 @@ class ShopsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shop_params
-      params.require(:shop).permit(:stardewvalley_id, :name, :open_hours, :days_closed, :inventory, :extra_info)
+      params.require(:shop).permit(:stardewvalley_id, :name, :open_hours, :days_closed, :inventory, :extra_info, :image)
     end
 end

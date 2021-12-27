@@ -46,6 +46,6 @@ class BuildingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def building_params
-      params.require(:building).permit(:stardewvalley_id, :name, :cost, :use)
+      params.require(:building).permit(:stardewvalley_id, :name, :cost, :use, :image)
     end
 end

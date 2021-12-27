@@ -46,6 +46,6 @@ class TreesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tree_params
-      params.require(:tree).permit(:name, :growth_time, :season, :price, :produces, :stardewvalley_id)
+      params.require(:tree).permit(:name, :growth_time, :season, :price, :produces, :stardewvalley_id, :image)
     end
 end

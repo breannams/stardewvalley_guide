@@ -46,6 +46,6 @@ class AnimalsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def animal_params
-      params.require(:animal).permit(:stardewvalley_id, :name, :cost, :produces, :selling_price, :requirements)
+      params.require(:animal).permit(:stardewvalley_id, :name, :cost, :produces, :selling_price, :requirements, :image)
     end
 end

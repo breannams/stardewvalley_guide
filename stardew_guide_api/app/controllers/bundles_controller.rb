@@ -46,6 +46,6 @@ class BundlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bundle_params
-      params.require(:bundle).permit(:stardewvalleys_id, :room, :room_reward, :name, :requirements, :bundle_reward)
+      params.require(:bundle).permit(:stardewvalleys_id, :room, :room_reward, :name, :requirements, :bundle_reward, :image)
     end
 end

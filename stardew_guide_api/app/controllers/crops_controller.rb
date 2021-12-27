@@ -46,6 +46,6 @@ class CropsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def crop_params
-      params.require(:crop).permit(:stardewvalley_id, :name, :grow_time, :buy_price, :sell_price, :restores, :used_in, :giant_crop)
+      params.require(:crop).permit(:stardewvalley_id, :name, :grow_time, :buy_price, :sell_price, :restores, :used_in, :giant_crop, :image)
     end
 end

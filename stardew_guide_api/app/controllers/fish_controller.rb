@@ -46,6 +46,6 @@ class FishController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def fish_params
-      params.require(:fish).permit(:stardewvalleys_id, :name, :location, :time, :season, :weather, :difficulty, :used_in)
+      params.require(:fish).permit(:stardewvalleys_id, :name, :location, :time, :season, :weather, :difficulty, :used_in, :image)
     end
 end

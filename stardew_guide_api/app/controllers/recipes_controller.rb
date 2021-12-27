@@ -46,6 +46,6 @@ class RecipesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def recipe_params
-      params.require(:recipe).permit(:name, :ingredients, :restores, :buffs, :recipe, :sources, :loved_by, :stardewvalley_id)
+      params.require(:recipe).permit(:name, :ingredients, :restores, :buffs, :recipe, :sources, :loved_by, :stardewvalley_id, :image)
     end
 end

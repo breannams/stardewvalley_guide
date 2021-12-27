@@ -46,6 +46,6 @@ class VillagersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def villager_params
-      params.fetch(:villager, {})
+      params.require(:villager).permit(:name, :gifts, :heart_event_triggers, :marriage, :birthday, :stardewvalley_id, :image)
     end
 end
