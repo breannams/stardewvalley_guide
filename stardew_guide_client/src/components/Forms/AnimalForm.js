@@ -10,7 +10,7 @@ class AnimalForm extends Component {
         produces: "",
         sell_price: 0,
         requirements: "",
-        stardewvalley_id: null
+        stardewvalley_id: 1
     }
 
     handleChange = (event) => {
@@ -23,25 +23,24 @@ class AnimalForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        let state = this.state
+        debugger
     }
 
     render(){
         return(
             <>
                 <h1>Add a new animal: </h1>
-                <h3>Choose which Stardewvalley this animal belongs to: </h3> 
-                
-                <StardewmodForm />
 
                 <form onSubmit = {this.handleSubmit}>
                
                     <h3>
                         <br></br>
                         {/* need to add images to backend AR and grab stardew ID from mod form. */}
-                        <label>Animal Image:</label>
+                        {/* <label>Animal Image:</label>
                         <input type = "file" onChange = {this.imageChange}/>
                         <button OnClick = {this.fileUploadHandler}>Upload</button>
-                        <br></br>
+                        <br></br> */}
 
                         <label>Animal Name: </label>
                         <input type = "text" name = "name" onChange = {this.handleChange} />
