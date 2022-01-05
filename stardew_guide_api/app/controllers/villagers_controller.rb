@@ -48,3 +48,6 @@ class VillagersController < ApplicationController
     def villager_params
       params.require(:villager).permit(:name, :gifts, :heart_event_triggers, :marriage, :birthday, :stardewvalley_id, :image)
     end
+
+
+  end
